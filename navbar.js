@@ -64,7 +64,7 @@ aElement.textContent = "Krabí kultura";
 // Vytvoření elementu <div> s třídou "dropdown-menu" a atributem "aria-labelledby"
 const divElement = document.createElement("div");
 divElement.classList.add("dropdown-menu");
-aElement.setAttribute("for", "navbarDropdownMenuLink");
+divElement.setAttribute("for", "navbarDropdownMenuLink");
 divElement.setAttribute("aria-labelledby", "navbarDropdownMenuLink");
 
 // Vytvoření tří elementů <a> s třídou "dropdown-item" a atributem "href"
