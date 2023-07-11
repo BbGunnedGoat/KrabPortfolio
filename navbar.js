@@ -42,6 +42,53 @@ items.forEach((item) => {
   listItem.appendChild(link);
   list.appendChild(listItem);
 });
+// Vytvoření elementu <li> s třídou "nav-item" a "dropdown"
+const liElement = document.createElement("li");
+liElement.classList.add("nav-item", "dropdown");
+
+// Vytvoření elementu <a> s třídou "nav-link dropdown-toggle" a atributy "href", "id", "role", "data-toggle", "aria-haspopup" a "aria-expanded"
+const aElement = document.createElement("a");
+aElement.classList.add("nav-link", "dropdown-toggle");
+aElement.setAttribute("href", "#");
+aElement.setAttribute("id", "navbarDropdownMenuLink");
+aElement.setAttribute("role", "button");
+aElement.setAttribute("data-toggle", "dropdown");
+aElement.setAttribute("aria-haspopup", "true");
+aElement.setAttribute("aria-expanded", "false");
+aElement.textContent = "Krabí kultura";
+
+// Vytvoření elementu <div> s třídou "dropdown-menu" a atributem "aria-labelledby"
+const divElement = document.createElement("div");
+divElement.classList.add("dropdown-menu");
+divElement.setAttribute("aria-labelledby", "navbarDropdownMenuLink");
+
+// Vytvoření tří elementů <a> s třídou "dropdown-item" a atributem "href"
+const a1Element = document.createElement("a");
+a1Element.classList.add("dropdown-item");
+a1Element.setAttribute("href", "#");
+a1Element.textContent = "Symbolika krabů";
+
+const a2Element = document.createElement("a");
+a2Element.classList.add("dropdown-item");
+a2Element.setAttribute("href", "#");
+a2Element.textContent = "Krabí festivaly";
+
+const a3Element = document.createElement("a");
+a3Element.classList.add("dropdown-item");
+a3Element.setAttribute("href", "#");
+a3Element.textContent = "Kraby v umění";
+
+// Připojení elementů <a> k elementu <div>
+divElement.appendChild(a1Element);
+divElement.appendChild(a2Element);
+divElement.appendChild(a3Element);
+
+// Připojení elementů <a> a <div> k elementu <li>
+liElement.appendChild(aElement);
+liElement.appendChild(divElement);
+
+// Vložení vytvořeného elementu <li> do HTML dokumentu
+list.appendChild(liElement);
 
 collapse.appendChild(list);
 container.appendChild(brand);
