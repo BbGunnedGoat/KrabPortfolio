@@ -80,7 +80,7 @@ a2Element.textContent = "Krabí festivaly";
 const a3Element = document.createElement("a");
 a3Element.classList.add("dropdown-item");
 a3Element.setAttribute("href", "#");
-a3Element.textContent = "Kraby v umění";
+a3Element.textContent = "Krabi v umění";
 
 // Připojení elementů <a> k elementu <div>
 divElement.appendChild(a1Element);
