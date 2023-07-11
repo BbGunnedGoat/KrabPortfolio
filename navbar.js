@@ -1,3 +1,7 @@
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js';
+document.head.appendChild(script);
+
 const nav = document.createElement('nav');
 nav.classList.add('navbar', 'navbar-expand-lg', 'navbar-light', 'bg-light');
 
@@ -48,7 +52,7 @@ liElement.classList.add("nav-item", "dropdown");
 // Vytvoření elementu <a> s třídou "nav-link dropdown-toggle" a atributy "href", "id", "role", "data-toggle", "aria-haspopup" a "aria-expanded"
 const aElement = document.createElement("a");
 aElement.classList.add("nav-link", "dropdown-toggle");
-aElement.setAttribute("href", "#");
+aElement.setAttribute("href", "krabiKultura.html");
 aElement.setAttribute("id", "navbarDropdownMenuLink");
 aElement.setAttribute("role", "button");
 aElement.setAttribute("data-toggle", "dropdown");
