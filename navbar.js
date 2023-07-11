@@ -53,7 +53,7 @@ liElement.classList.add("nav-item", "dropdown");
 // Vytvoření elementu <a> s třídou "nav-link dropdown-toggle" a atributy "href", "id", "role", "data-toggle", "aria-haspopup" a "aria-expanded"
 const aElement = document.createElement("a");
 aElement.classList.add("nav-link", "dropdown-toggle");
-aElement.setAttribute("href", "krabiKultura.html");
+aElement.setAttribute("href", "#");
 aElement.setAttribute("id", "navbarDropdownMenuLink");
 aElement.setAttribute("role", "button");
 aElement.setAttribute("data-toggle", "dropdown");
