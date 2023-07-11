@@ -27,6 +27,7 @@ const items = [
   { text: 'Domů', href: 'index.html' },
   { text: 'Povstání krabů', href: 'povstaniKrabu.html' }, 
   { text: 'Krabí kultura', href: 'krabiKultura.html' }, 
+  { text: 'Hrdinové krabstva', href: 'hrdinoveKrabstva.html' }
 ];
 
 items.forEach((item) => {
