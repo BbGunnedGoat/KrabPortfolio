@@ -53,7 +53,7 @@ liElement.classList.add("nav-item", "dropdown");
 // Vytvoření elementu <a> s třídou "nav-link dropdown-toggle" a atributy "href", "id", "role", "data-toggle", "aria-haspopup" a "aria-expanded"
 const aElement = document.createElement("a");
 aElement.classList.add("nav-link", "dropdown-toggle");
-aElement.setAttribute("href", "#");
+//aElement.setAttribute("href", "#");
 aElement.setAttribute("id", "navbarDropdownMenuLink");
 aElement.setAttribute("role", "button");
 aElement.setAttribute("data-toggle", "dropdown");
@@ -64,6 +64,7 @@ aElement.textContent = "Krabí kultura";
 // Vytvoření elementu <div> s třídou "dropdown-menu" a atributem "aria-labelledby"
 const divElement = document.createElement("div");
 divElement.classList.add("dropdown-menu");
+aElement.setAttribute("for", "navbarDropdownMenuLink");
 divElement.setAttribute("aria-labelledby", "navbarDropdownMenuLink");
 
 // Vytvoření tří elementů <a> s třídou "dropdown-item" a atributem "href"
